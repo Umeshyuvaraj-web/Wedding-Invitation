@@ -1,0 +1,1223 @@
+/* ==========================
+   HASINI ❤️ PRATHAP
+   TEMPLE WEDDING CINEMATIC
+========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Noto+Serif+Telugu:wght@400;500;700&display=swap');
+
+:root{
+
+--gold:#d4af37;
+--dark-gold:#b8860b;
+
+--white:#ffffff;
+--cream:#fffdf7;
+--light:#f9f7f1;
+
+--text:#2d2d2d;
+
+--shadow:
+0 10px 30px rgba(212,175,55,.15);
+
+}
+
+/* ==========================
+RESET
+========================== */
+
+*{
+
+margin:0;
+padding:0;
+
+box-sizing:border-box;
+
+scroll-behavior:smooth;
+
+}
+
+body{
+
+background:var(--cream);
+
+color:var(--text);
+
+font-family:'Cinzel',serif;
+
+overflow-x:hidden;
+
+}
+
+/* ==========================
+HEADINGS
+========================== */
+
+h1{
+
+color:var(--gold);
+
+font-family:
+'Noto Serif Telugu',
+serif;
+
+}
+
+h2{
+
+color:#444;
+
+font-weight:500;
+
+}
+
+/* ==========================
+WELCOME SCREEN
+BLACK + GOLD
+========================== */
+
+#welcome{
+
+position:fixed;
+
+top:0;
+left:0;
+
+width:100%;
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+align-items:center;
+
+background:
+radial-gradient(
+circle at center,
+#1a1a1a 0%,
+#080808 50%,
+#000000 100%
+);
+
+overflow:hidden;
+
+z-index:999999;
+
+}
+
+#welcome::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+background-image:
+radial-gradient(
+circle,
+rgba(255,215,0,.9) 1px,
+transparent 1px
+);
+
+background-size:80px 80px;
+
+opacity:.20;
+
+animation:
+sparkle 15s linear infinite;
+
+}
+
+@keyframes sparkle{
+
+from{
+
+transform:translateY(0);
+
+}
+
+to{
+
+transform:translateY(-100px);
+
+}
+
+}
+
+.welcome-overlay{
+
+text-align:center;
+
+padding:20px;
+
+position:relative;
+
+z-index:2;
+
+}
+
+.welcome-overlay h1{
+
+font-size:4rem;
+
+color:#FFD700;
+
+text-shadow:
+
+0 0 10px #FFD700,
+0 0 20px #FFD700,
+0 0 40px #FFD700,
+0 0 80px rgba(255,215,0,.5);
+
+}
+
+.welcome-overlay h2{
+
+font-size:2.5rem;
+
+color:#ffffff;
+
+margin-top:20px;
+
+text-shadow:
+0 0 10px rgba(255,255,255,.3);
+
+}
+
+.welcome-overlay p{
+
+color:#e8d7a0;
+
+margin-top:20px;
+
+letter-spacing:4px;
+
+font-size:1.1rem;
+
+}
+
+#startBtn{
+
+margin-top:40px;
+
+padding:18px 50px;
+
+background:
+linear-gradient(
+135deg,
+#FFD700,
+#F4C430
+);
+
+color:#111;
+
+font-size:1.2rem;
+
+font-weight:700;
+
+border:none;
+
+border-radius:16px;
+
+cursor:pointer;
+
+box-shadow:
+
+0 0 15px rgba(255,215,0,.5),
+0 0 30px rgba(255,215,0,.3);
+
+transition:.4s;
+
+}
+
+#startBtn:hover{
+
+transform:translateY(-5px);
+
+box-shadow:
+
+0 0 25px rgba(255,215,0,.8),
+0 0 50px rgba(255,215,0,.4);
+
+}
+
+/* ==========================
+INTRO
+========================== */
+
+.intro{
+
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+align-items:center;
+
+text-align:center;
+
+position:relative;
+
+overflow:hidden;
+
+background:
+linear-gradient(
+180deg,
+#ffffff,
+#fffdf7,
+#f9f7f1
+);
+
+}
+
+.intro-content{
+
+z-index:2;
+
+}
+
+.intro-line{
+
+font-size:4rem;
+
+margin-bottom:15px;
+
+color:var(--gold);
+
+text-shadow:
+
+0 0 10px rgba(212,175,55,.2);
+
+animation:
+fadeUp 2s ease;
+
+}
+
+.intro-sub{
+
+font-size:1.2rem;
+
+margin-bottom:40px;
+
+letter-spacing:3px;
+
+}
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:
+translateY(60px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:
+translateY(0);
+
+}
+
+}
+
+/* ==========================
+PARTICLES
+========================== */
+
+#particles{
+
+position:absolute;
+
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+pointer-events:none;
+
+overflow:hidden;
+
+}
+
+/* ==========================
+TEMPLE SECTION
+========================== */
+
+.temple-section{
+
+height:100vh;
+
+position:relative;
+
+overflow:hidden;
+
+background:
+linear-gradient(
+180deg,
+#ffffff,
+#f9f7f1
+);
+
+}
+
+.door{
+
+position:absolute;
+
+top:0;
+
+width:50%;
+height:100%;
+
+background:
+linear-gradient(
+180deg,
+#7d4c00,
+#5e3500
+);
+
+border:5px solid var(--gold);
+
+z-index:20;
+
+}
+
+.left-door{
+
+left:0;
+
+animation:
+openLeft 4s forwards;
+
+animation-delay:2s;
+
+}
+
+.right-door{
+
+right:0;
+
+animation:
+openRight 4s forwards;
+
+animation-delay:2s;
+
+}
+
+@keyframes openLeft{
+
+100%{
+
+transform:
+translateX(-100%);
+
+}
+
+}
+
+@keyframes openRight{
+
+100%{
+
+transform:
+translateX(100%);
+
+}
+
+}
+
+.center-content{
+
+position:absolute;
+
+top:50%;
+left:50%;
+
+transform:
+translate(-50%,-50%);
+
+text-align:center;
+
+z-index:5;
+
+}
+
+.ganesha img{
+
+width:220px;
+
+filter:
+
+drop-shadow(
+0 0 15px rgba(212,175,55,.4)
+)
+
+drop-shadow(
+0 0 30px rgba(212,175,55,.2)
+);
+
+}
+
+.center-content h1{
+
+font-size:3rem;
+
+margin-top:20px;
+
+}
+
+.center-content h2{
+
+margin-top:15px;
+
+}
+/* ==========================
+COUPLE SECTION
+========================== */
+
+.couple-section{
+
+height:100vh;
+
+position:relative;
+
+overflow:hidden;
+
+background:
+linear-gradient(
+180deg,
+#ffffff,
+#fffaf0
+);
+
+}
+
+.bride{
+
+position:absolute;
+
+left:8%;
+bottom:0;
+
+width:280px;
+
+filter:
+drop-shadow(
+0 0 15px rgba(212,175,55,.4)
+);
+
+animation:
+floatMove 4s ease-in-out infinite;
+
+}
+
+.groom{
+
+position:absolute;
+
+right:8%;
+bottom:0;
+
+width:280px;
+
+filter:
+drop-shadow(
+0 0 15px rgba(212,175,55,.4)
+);
+
+animation:
+floatMove 4s ease-in-out infinite;
+
+}
+
+@keyframes floatMove{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-15px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+
+.couple-names{
+
+position:absolute;
+
+top:50%;
+left:50%;
+
+transform:
+translate(-50%,-50%);
+
+text-align:center;
+
+}
+
+.couple-names h1{
+
+font-size:4rem;
+
+text-shadow:
+0 0 10px rgba(212,175,55,.3);
+
+}
+
+.couple-names h2{
+
+margin-top:15px;
+
+}
+
+/* ==========================
+PETALS
+========================== */
+
+#petals-container{
+
+position:absolute;
+
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+pointer-events:none;
+
+overflow:hidden;
+
+}
+
+.petal{
+
+position:absolute;
+
+animation:
+fall linear;
+
+}
+
+@keyframes fall{
+
+0%{
+
+transform:
+translateY(-100px)
+rotate(0deg);
+
+opacity:1;
+
+}
+
+100%{
+
+transform:
+translateY(110vh)
+rotate(360deg);
+
+opacity:0;
+
+}
+
+}
+
+/* ==========================
+INVITATION SCROLL
+========================== */
+
+.invitation-section{
+
+padding:120px 20px;
+
+background:
+linear-gradient(
+180deg,
+#ffffff,
+#fffdf7
+);
+
+}
+
+.scroll{
+
+max-width:900px;
+
+margin:auto;
+
+padding:60px;
+
+background:#ffffff;
+
+border:3px solid var(--gold);
+
+border-radius:25px;
+
+box-shadow:
+0 0 30px rgba(212,175,55,.20);
+
+}
+
+.scroll-content{
+
+text-align:center;
+
+color:#3d3d3d;
+
+}
+
+.scroll-content h1{
+
+margin-bottom:20px;
+
+}
+
+.scroll-content h2{
+
+margin-bottom:30px;
+
+}
+
+.scroll-content p{
+
+font-size:1.1rem;
+
+line-height:2rem;
+
+margin-top:20px;
+
+}
+
+/* ==========================
+DETAILS SECTION
+========================== */
+
+.details-section{
+
+padding:120px 20px;
+
+text-align:center;
+
+background:#ffffff;
+
+}
+
+.details-card{
+
+display:flex;
+
+justify-content:center;
+
+gap:30px;
+
+flex-wrap:wrap;
+
+margin-top:50px;
+
+}
+
+.detail{
+
+background:#ffffff;
+
+padding:35px;
+
+min-width:250px;
+
+border:2px solid var(--gold);
+
+border-radius:20px;
+
+box-shadow:var(--shadow);
+
+transition:.4s;
+
+}
+
+.detail:hover{
+
+transform:translateY(-10px);
+
+}
+
+.detail h3{
+
+color:var(--gold);
+
+margin-bottom:15px;
+
+}
+
+/* ==========================
+COUNTDOWN
+========================== */
+
+.countdown-section{
+
+padding:120px 20px;
+
+text-align:center;
+
+background:#fffdf7;
+
+}
+
+#countdown{
+
+display:flex;
+
+justify-content:center;
+
+gap:25px;
+
+flex-wrap:wrap;
+
+margin-top:50px;
+
+}
+
+#countdown div{
+
+width:130px;
+
+height:130px;
+
+background:#ffffff;
+
+border-radius:50%;
+
+border:3px solid var(--gold);
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+box-shadow:var(--shadow);
+
+}
+
+#countdown span{
+
+font-size:2rem;
+
+font-weight:bold;
+
+color:var(--gold);
+
+}
+
+#countdown p{
+
+margin-top:5px;
+
+}
+
+/* ==========================
+VENUE
+========================== */
+
+.venue-section{
+
+padding:120px 20px;
+
+text-align:center;
+
+background:#ffffff;
+
+}
+
+.venue-card{
+
+max-width:600px;
+
+margin:auto;
+
+padding:50px;
+
+background:white;
+
+border:2px solid var(--gold);
+
+border-radius:25px;
+
+box-shadow:var(--shadow);
+
+}
+
+.venue-btn{
+
+display:inline-block;
+
+margin-top:20px;
+
+padding:15px 35px;
+
+background:var(--gold);
+
+color:white;
+
+text-decoration:none;
+
+border-radius:12px;
+
+font-weight:bold;
+
+transition:.4s;
+
+}
+
+.venue-btn:hover{
+
+background:var(--dark-gold);
+
+transform:translateY(-4px);
+
+}
+
+/* ==========================
+BLESSINGS
+========================== */
+
+.blessings-section{
+
+padding:120px 20px;
+
+text-align:center;
+
+background:#fffdf7;
+
+}
+
+.quote{
+
+max-width:900px;
+
+margin:25px auto;
+
+padding:30px;
+
+background:white;
+
+border-left:5px solid var(--gold);
+
+border-radius:15px;
+
+box-shadow:var(--shadow);
+
+line-height:2rem;
+
+}
+
+/* ==========================
+RSVP
+========================== */
+
+.rsvp-section{
+
+padding:120px 20px;
+
+text-align:center;
+
+background:#ffffff;
+
+}
+
+form{
+
+max-width:550px;
+
+margin:auto;
+
+display:flex;
+
+flex-direction:column;
+
+gap:20px;
+
+}
+
+input,
+select{
+
+padding:16px;
+
+border:2px solid #ddd;
+
+border-radius:12px;
+
+outline:none;
+
+transition:.3s;
+
+}
+
+input:focus,
+select:focus{
+
+border-color:var(--gold);
+
+}
+
+form button{
+
+padding:16px;
+
+border:none;
+
+background:var(--gold);
+
+color:white;
+
+font-weight:bold;
+
+border-radius:12px;
+
+cursor:pointer;
+
+transition:.4s;
+
+}
+
+form button:hover{
+
+background:var(--dark-gold);
+
+}
+
+/* ==========================
+FINALE
+========================== */
+
+.final-section{
+
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+align-items:center;
+
+text-align:center;
+
+background:
+linear-gradient(
+180deg,
+#ffffff,
+#fffdf7,
+#ffffff
+);
+
+}
+
+.final-content h1{
+
+font-size:4rem;
+
+margin-bottom:20px;
+
+}
+
+.final-content h2{
+
+margin-bottom:25px;
+
+}
+
+#blessBtn{
+
+margin-top:40px;
+
+padding:18px 40px;
+
+background:var(--gold);
+
+color:white;
+
+border:none;
+
+border-radius:12px;
+
+font-weight:bold;
+
+cursor:pointer;
+
+transition:.4s;
+
+}
+
+#blessBtn:hover{
+
+background:var(--dark-gold);
+
+transform:translateY(-4px);
+
+}
+
+/* ==========================
+FIREWORKS
+========================== */
+
+#fireworks{
+
+position:fixed;
+
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+pointer-events:none;
+
+z-index:1;
+
+}
+
+/* ==========================
+SCROLL ANIMATION
+========================== */
+
+section{
+
+opacity:0;
+
+transform:translateY(50px);
+
+transition:
+all 1s ease;
+
+}
+
+section.show{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+/* ==========================
+MOBILE
+========================== */
+
+@media(max-width:768px){
+
+.welcome-overlay h1{
+
+font-size:2.5rem;
+
+}
+
+.welcome-overlay h2{
+
+font-size:1.5rem;
+
+}
+
+.intro-line{
+
+font-size:2rem;
+
+}
+
+.ganesha img{
+
+width:140px;
+
+}
+
+.bride,
+.groom{
+
+width:150px;
+
+}
+
+.couple-names h1{
+
+font-size:2rem;
+
+}
+
+.scroll{
+
+padding:30px;
+
+}
+
+#countdown div{
+
+width:90px;
+height:90px;
+
+}
+
+#countdown span{
+
+font-size:1.3rem;
+
+}
+
+.final-content h1{
+
+font-size:2rem;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.bride{
+
+left:0;
+width:120px;
+
+}
+
+.groom{
+
+right:0;
+width:120px;
+
+}
+
+.couple-names h1{
+
+font-size:1.6rem;
+
+}
+
+.detail{
+
+min-width:100%;
+
+}
+
+}

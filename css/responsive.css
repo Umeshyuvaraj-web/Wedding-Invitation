@@ -1,0 +1,438 @@
+/* =================================
+   RESPONSIVE DESIGN
+================================= */
+
+
+/* ==========================
+   LARGE LAPTOPS
+========================== */
+
+@media (max-width:1200px){
+
+.couple-names h1{
+font-size:3.2rem;
+}
+
+.bride,
+.groom{
+width:250px;
+}
+
+}
+
+
+/* ==========================
+   TABLETS
+========================== */
+
+@media (max-width:992px){
+
+.intro-line{
+font-size:3rem;
+}
+
+.center-content h1{
+font-size:2.3rem;
+}
+
+.center-content h2{
+font-size:1rem;
+}
+
+.ganesha{
+font-size:90px;
+}
+
+.bride{
+width:220px;
+}
+
+.groom{
+width:220px;
+}
+
+.couple-names h1{
+font-size:2.7rem;
+}
+
+.couple-names h2{
+font-size:1.2rem;
+}
+
+.scroll{
+width:90%;
+padding:35px;
+}
+
+.scroll-content h1{
+font-size:2rem;
+}
+
+.scroll-content p{
+font-size:1rem;
+line-height:2rem;
+}
+
+.final-overlay h1{
+font-size:3rem;
+}
+
+}
+
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media (max-width:768px){
+
+.intro{
+padding:20px;
+}
+
+.intro-line{
+
+font-size:2.2rem;
+
+}
+
+.intro-sub{
+
+font-size:.9rem;
+
+letter-spacing:2px;
+
+}
+
+.ganesha{
+
+font-size:70px;
+
+}
+
+.center-content h1{
+
+font-size:1.8rem;
+
+}
+
+.center-content h2{
+
+font-size:.9rem;
+
+}
+
+/* Couple */
+
+.bride{
+
+width:160px;
+
+left:-200px;
+
+}
+
+.groom{
+
+width:160px;
+
+right:-200px;
+
+}
+
+.couple-names{
+
+width:90%;
+
+}
+
+.couple-names h1{
+
+font-size:2rem;
+
+line-height:1.5;
+
+}
+
+.couple-names h2{
+
+font-size:1rem;
+
+}
+
+/* Scroll */
+
+.scroll{
+
+width:95%;
+
+padding:25px;
+
+}
+
+.scroll-content h1{
+
+font-size:1.6rem;
+
+}
+
+.scroll-content h2{
+
+font-size:1rem;
+
+}
+
+.scroll-content p{
+
+font-size:.95rem;
+
+line-height:1.8rem;
+
+}
+
+/* Countdown */
+
+#countdown{
+
+gap:15px;
+
+}
+
+#countdown div{
+
+width:90px;
+height:90px;
+
+}
+
+#countdown span{
+
+font-size:1.2rem;
+
+}
+
+/* Detail Card */
+
+.detail-card{
+
+padding:25px;
+
+}
+
+/* Venue */
+
+.venue-card{
+
+padding:25px;
+
+}
+
+/* Quotes */
+
+.quote{
+
+padding:20px;
+
+font-size:1rem;
+
+}
+
+/* Form */
+
+input,
+select,
+button{
+
+font-size:.95rem;
+
+}
+
+/* Final */
+
+.final-overlay h1{
+
+font-size:2rem;
+
+}
+
+.final-overlay h2{
+
+font-size:1rem;
+
+}
+
+.final-overlay p{
+
+font-size:.95rem;
+
+}
+
+#blessBtn{
+
+padding:14px 25px;
+
+font-size:.9rem;
+
+}
+
+}
+
+
+/* ==========================
+   SMALL MOBILES
+========================== */
+
+@media (max-width:480px){
+
+.intro-line{
+
+font-size:1.8rem;
+
+}
+
+.intro-sub{
+
+font-size:.8rem;
+
+}
+
+.ganesha{
+
+font-size:60px;
+
+}
+
+.center-content h1{
+
+font-size:1.4rem;
+
+}
+
+.center-content h2{
+
+font-size:.8rem;
+
+}
+
+.bride{
+
+width:130px;
+
+}
+
+.groom{
+
+width:130px;
+
+}
+
+.couple-names h1{
+
+font-size:1.5rem;
+
+}
+
+.couple-names h2{
+
+font-size:.85rem;
+
+}
+
+.scroll-content h1{
+
+font-size:1.3rem;
+
+}
+
+.scroll-content p{
+
+font-size:.85rem;
+
+line-height:1.6rem;
+
+}
+
+#countdown div{
+
+width:75px;
+height:75px;
+
+}
+
+#countdown span{
+
+font-size:1rem;
+
+}
+
+.final-overlay h1{
+
+font-size:1.6rem;
+
+}
+
+}
+
+
+/* ==========================
+   EXTRA LARGE TV
+========================== */
+
+@media (min-width:1600px){
+
+.intro-line{
+
+font-size:5rem;
+
+}
+
+.ganesha{
+
+font-size:180px;
+
+}
+
+.center-content h1{
+
+font-size:4rem;
+
+}
+
+.bride,
+.groom{
+
+width:400px;
+
+}
+
+.couple-names h1{
+
+font-size:5rem;
+
+}
+
+.scroll{
+
+max-width:1200px;
+
+}
+
+.scroll-content h1{
+
+font-size:3.5rem;
+
+}
+
+.scroll-content p{
+
+font-size:1.5rem;
+
+}
+
+.final-overlay h1{
+
+font-size:5rem;
+
+}
+
+}
